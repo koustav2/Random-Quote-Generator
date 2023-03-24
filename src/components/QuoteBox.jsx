@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../Store";
-import { TweetQuoteButton } from "./TweetQuoteButton.jsx";
 import { NewQuoteButton } from "./NewQuoteButton.jsx";
 import { ACTIONS } from "../config";
 
@@ -41,7 +40,6 @@ export function QuoteBox() {
         - {!state.isLoading && quote?.author}
       </span>
       <div className="d-flex justify-content-between">
-        <TweetQuoteButton quote={!state.isLoading && quote} />
         <NewQuoteButton />
       </div>
     </div>
